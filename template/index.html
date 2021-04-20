@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+			integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+			crossorigin="anonymous"
+		/>
+
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+			}
+			.container {
+				display: block;
+				height: 100%;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			.card_box {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				width: 90%;
+				height: auto;
+				margin: 6rem auto;
+			}
+			.card {
+				background-color: aqua;
+				width: 17rem;
+				height: 100%;
+				display: flex;
+				padding: 1rem;
+				margin: 1rem;
+				flex-direction: column;
+				text-align: center;
+				box-shadow: -1px 10px 16px 1px rgba(0, 0, 0, 0.68);
+			}
+			i {
+				font-size: 8rem;
+				padding-bottom: 1rem;
+			}
+			h3 {
+				margin: 0.4rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card_box">{%card%}</div>
+		</div>
+	</body>
+</html>
